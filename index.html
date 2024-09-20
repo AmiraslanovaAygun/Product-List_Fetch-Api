@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/aa02fbbfef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <img src="./images/shopping.png" alt="">
+            <p>My Shopping Page</p>
+            <div>
+                <button class="header-btn" onclick="ShowBasket()"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+
+        </nav>
+    </header>
+    <section class="main-page container">
+        <div class="main-products">
+            <!-- <div class="product">
+                <img src="./images/960x0.webp" alt="">
+                <p class="product-name">ikjnmb bnj</p>
+                <span class="product-price">okjmn jk</span>
+                <button class="product-btn">Show More</button>
+                <i class="add-favori fa-solid fa-heart"></i>
+                <i class="add-basket fa-solid fa-cart-shopping"></i>
+            </div> -->
+
+        </div>
+        <div class="basket-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: center;">Total:</td>
+                        <td class="total"></td>
+                    </tr>
+                </tfoot>  
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

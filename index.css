@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 12px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6cdf7;
+  font-size: 48px;
+  font-weight: 700;
+}
+header img {
+  width: 250px;
+}
+header button {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border: 5px solid #a492e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header button:hover {
+  color: #a492e6;
+}
+
+.main-page {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page .main-products {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main-page .product {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+}
+.main-page .product-img {
+  width: 150px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.main-page .product img {
+  width: 150px;
+  max-height: 220px;
+}
+
+.main-page .product-btn {
+  padding: 4px 8px;
+  background-color: #c7b9f8;
+  cursor: pointer;
+}
+
+.main-page .product .add-favori,
+.main-page .product .add-basket {
+  position: absolute;
+  border: 1px solid transparent;
+  padding: 8px;
+  background-color: #c7b9f8;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main-page .product .add-favori:hover,
+.main-page .product .add-basket:hover,
+.main-page .product-btn:hover {
+  background-color: #a492e6;
+}
+
+.main-page .product .add-favori {
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+.main-page .product .add-basket {
+  top: 55px;
+  right: 10px;
+  font-size: 18px;
+}
+
+.main-page table {
+  border-collapse: collapse;
+  display: none;
+}
+.main-page table img {
+  width: 35px;
+}
+
+.main-page .delete-btn {
+  padding: 2px 4px 10px;
+  color: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-color: red;
+}
+.main-page .delete-btn:hover {
+  background-color: lightcoral;
+}
+.main-page table th,
+td {
+  max-width: 180px;
+  overflow: hidden;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+.main-page table th {
+  background-color: #f4f4f4;
+}
+.main-page table .total {
+  font-weight: bold;
+}
